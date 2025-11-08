@@ -1,0 +1,263 @@
+.inicio-section {
+  min-height: calc(100vh - 80px);
+  position: relative;
+}
+
+.inicio-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+.inicio-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.inicio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inicio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg, 
+    rgba(139, 69, 19, 0.4) 0%, 
+    rgba(160, 82, 45, 0.3) 50%,
+    rgba(245, 245, 220, 0.2) 100%
+  );
+}
+
+.inicio-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio-welcome {
+  text-align: center;
+  background: rgba(245, 245, 220, 0.95);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(139, 69, 19, 0.3);
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+}
+
+.inicio-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #8B4513;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inicio-subtitle {
+  font-size: 1.3rem;
+  color: #A0522D;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.btn-conocer-mas {
+  background: linear-gradient(135deg, #B06500 0%, #8B4513 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
+}
+
+.btn-conocer-mas:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.5);
+}
+
+.btn-conocer-mas:active {
+  transform: translateY(-1px);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: #F5F5DC;
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: slideUp 0.4s ease-out;
+  border: 2px solid #D2B48C;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #8B4513;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  background: #A0522D;
+  transform: rotate(90deg);
+}
+
+.modal-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #8B4513;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.modal-description {
+  color: #5C4033;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.modal-description p {
+  margin-bottom: 1.5rem;
+}
+
+.modal-description p:last-child {
+  margin-bottom: 0;
+}
+
+.modal-description strong {
+  color: #8B4513;
+  font-weight: 700;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #EDE0D4;
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #8B4513;
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #A0522D;
+}
+
+@media (max-width: 768px) {
+  .inicio-hero {
+    min-height: calc(100vh - 80px);
+  }
+
+  .inicio-content {
+    padding: 2rem 1rem;
+  }
+
+  .inicio-welcome {
+    padding: 2rem 1.5rem;
+  }
+
+  .inicio-title {
+    font-size: 2rem;
+  }
+
+  .inicio-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .btn-conocer-mas {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    padding: 2rem 1.5rem;
+    width: 95%;
+  }
+
+  .modal-title {
+    font-size: 2rem;
+  }
+
+  .modal-description {
+    font-size: 1rem;
+  }
+}
