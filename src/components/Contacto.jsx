@@ -9,7 +9,7 @@ function Contacto() {
         
         <div className="social-icons">
           <a 
-            href="https://www.instagram.com/webescences" 
+            href="https://www.instagram.com/essences_?igsh=cjJ1OHpxdTdmZmhv" 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-link instagram"

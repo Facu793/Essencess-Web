@@ -18,7 +18,7 @@ function Inicio() {
         </div>
         <div className="inicio-content">
           <div className="inicio-welcome">
-            <h2 className="inicio-title">Bienvenido a WebEscences</h2>
+            <h2 className="inicio-title">Bienvenido a Esscences</h2>
             <p className="inicio-subtitle">Transforma tu espacio con aromas únicos</p>
             <button 
               className="btn-conocer-mas"
@@ -42,7 +42,7 @@ function Inicio() {
             <h2 className="modal-title">Sobre WebEscences</h2>
             <div className="modal-description">
               <p>
-                En <strong>WebEscences</strong>, nos dedicamos a crear productos aromáticos de la más alta calidad 
+                En <strong>Escences</strong>, nos dedicamos a crear productos aromáticos de la más alta calidad 
                 para transformar tu espacio en un ambiente único y acogedor.
               </p>
               <p>
