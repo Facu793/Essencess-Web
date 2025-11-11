@@ -1,51 +1,35 @@
+import Souvenirs1 from '../image/Souvenir/Souvenirs.jpeg'
+import Souvenirs2 from '../image/Souvenir/Souvenirs2.jpeg'
+import Souvenirs3 from '../image/Souvenir/Souvenirs3.jpeg'
+import Souvenirs4 from '../image/Souvenir/Souvenirs4.jpeg'
+
 export const souvenirs = [
   {
     id: 1,
     nombre: "Souvenir Personalizado",
-    descripcion: "Souvenir artesanal personalizable. Perfecto para recuerdos especiales y momentos únicos.",
+    descripcion: "Souvenir artesanal personalizable. Perfecto para recuerdos especiales y momentos únicos. Ideal para eventos y regalos.",
     precio: 15.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Personalizado"
+    imagen: Souvenirs1
   },
   {
     id: 2,
     nombre: "Souvenir Decorativo",
-    descripcion: "Hermoso souvenir decorativo para mantener como recuerdo o regalo especial a alguien querido.",
+    descripcion: "Hermoso souvenir decorativo para mantener como recuerdo o regalo especial a alguien querido. Diseño elegante y atemporal.",
     precio: 18.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Decorativo"
+    imagen: Souvenirs2
   },
   {
     id: 3,
     nombre: "Souvenir de Evento",
-    descripcion: "Souvenir ideal para eventos especiales como cumpleaños, bodas o celebraciones importantes.",
+    descripcion: "Souvenir ideal para eventos especiales como cumpleaños, bodas o celebraciones importantes. Variedad de opciones disponibles.",
     precio: 12.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Evento"
+    imagen: Souvenirs3
   },
   {
     id: 4,
     nombre: "Souvenir Artesanal",
-    descripcion: "Souvenir hecho a mano con materiales de calidad. Único y especial para cualquier ocasión.",
+    descripcion: "Souvenir hecho a mano con materiales de calidad. Único y especial para cualquier ocasión. Diseño original y personalizado.",
     precio: 20.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Artesanal"
-  },
-  {
-    id: 5,
-    nombre: "Souvenir Mini",
-    descripcion: "Pequeño souvenir compacto, perfecto para llevar contigo o regalar como detalle especial.",
-    precio: 10.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Mini"
-  },
-  {
-    id: 6,
-    nombre: "Souvenir Premium",
-    descripcion: "Souvenir de alta calidad con diseño exclusivo. Ideal para ocasiones especiales y regalos importantes.",
-    precio: 25.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Premium"
+    imagen: Souvenirs4
   }
 ];
-
