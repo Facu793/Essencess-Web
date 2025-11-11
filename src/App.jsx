@@ -4,6 +4,8 @@ import Header from './components/Header'
 import Inicio from './components/Inicio'
 import Velas from './components/Velas'
 import Aromatizadores from './components/Aromatizadores'
+import PiezasYeso from './components/PiezasYeso'
+import Souvenirs from './components/Souvenirs'
 import Contacto from './components/Contacto'
 import Carrito from './components/Carrito'
 import './App.css'
@@ -19,6 +21,10 @@ function App() {
         return <Velas />
       case 'aromatizadores':
         return <Aromatizadores />
+      case 'piezas-yeso':
+        return <PiezasYeso />
+      case 'souvenirs':
+        return <Souvenirs />
       case 'contacto':
         return <Contacto />
       default:

@@ -8,7 +8,7 @@ function Header({ activeTab, setActiveTab }) {
   return (
     <header className="header">
       <div className="header-container">
-        <h1 className="logo">WebEscences</h1>
+        <h1 className="logo">Esscences</h1>
         <nav className="nav">
           <button 
             className={`nav-tab ${activeTab === 'inicio' ? 'active' : ''}`}
@@ -27,6 +27,18 @@ function Header({ activeTab, setActiveTab }) {
             onClick={() => setActiveTab('aromatizadores')}
           >
             Aromatizadores
+          </button>
+          <button 
+            className={`nav-tab ${activeTab === 'piezas-yeso' ? 'active' : ''}`}
+            onClick={() => setActiveTab('piezas-yeso')}
+          >
+            Piezas de Yeso
+          </button>
+          <button 
+            className={`nav-tab ${activeTab === 'souvenirs' ? 'active' : ''}`}
+            onClick={() => setActiveTab('souvenirs')}
+          >
+            Souvenirs
           </button>
           <button 
             className={`nav-tab ${activeTab === 'contacto' ? 'active' : ''}`}

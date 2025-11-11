@@ -18,13 +18,13 @@ function Inicio() {
         </div>
         <div className="inicio-content">
           <div className="inicio-welcome">
-            <h2 className="inicio-title">Bienvenido a WebEscences</h2>
-            <p className="inicio-subtitle">Transforma tu espacio con aromas únicos</p>
+            <h2 className="inicio-title">Bienvenido a Esscences</h2>
+            <p className="inicio-subtitle">Velas Aromáticas, Difusores y Piezas de Yeso diseñadas para decorar y perfumar tus espacios.</p>
             <button 
               className="btn-conocer-mas"
               onClick={() => setShowModal(true)}
             >
-              Conocer más sobre nosotros
+              Más sobre nosotros
             </button>
           </div>
         </div>
@@ -39,25 +39,21 @@ function Inicio() {
             >
               ✕
             </button>
-            <h2 className="modal-title">Sobre WebEscences</h2>
+            <h2 className="modal-title">Sobre Escences</h2>
             <div className="modal-description">
               <p>
-                En <strong>WebEscences</strong>, nos dedicamos a crear productos aromáticos de la más alta calidad 
+                En <strong>Escences</strong>, nos dedicamos a crear productos aromáticos de la más alta calidad 
                 para transformar tu espacio en un ambiente único y acogedor.
               </p>
               <p>
-                Nuestras velas y aromatizadores están elaborados con ingredientes naturales, 
-                cera de soja y aceites esenciales puros, garantizando una experiencia sensorial 
-                excepcional que dura horas.
+                En Essences nos dedicamos a crear productos aromáticos, de decoración y para obsequiar.
+                Transforma tu espacio en un ambiente único y acogedor con nuestros productos y empeza a regalar sensaciones! 
+                Cada producto es elaborado cuidadosamente para brindarte lo mejor.
+                
               </p>
               <p>
-                Cada producto es cuidadosamente seleccionado y diseñado para brindarte momentos 
-                de relajación, energía o comodidad, según tus necesidades. Creemos que los aromas 
-                tienen el poder de influir en nuestro estado de ánimo y bienestar.
-              </p>
-              <p>
-                Descubre nuestra amplia gama de fragancias, desde las más relajantes hasta las más 
-                energizantes, y encuentra el aroma perfecto para cada rincón de tu hogar.
+                Creemos que los aromas y colores tienen el poder de influir en nuestro estado de ánimo y bienestar, por eso realizamos productos personalizados,
+                para que puedas elegir el color y aroma de tu preferencia.
               </p>
             </div>
           </div>

@@ -1,51 +1,35 @@
+import DifusorAuto from '../image/Aromatizadores/DifusorAuto.jpeg'
+import DifusorVarilla from '../image/Aromatizadores/DifusorVarilla.jpeg'
+import PerfumeTextil from '../image/Aromatizadores/PerfumeTextil.jpeg'
+import Waxmelts from '../image/Aromatizadores/Waxmelts.jpeg'
+
 export const aromatizadores = [
   {
     id: 1,
-    nombre: "Aromatizador Lavanda",
-    descripcion: "Difusor de ambiente con esencia de lavanda. Duración de hasta 60 días de fragancia continua.",
-    precio: 35.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Relajación"
+    nombre: "Difusor Auto",
+    descripcion: "Están diseñados estéticamente para el coche, aportan un excelente aroma en el espacio. Envase de 10cc.",
+    precio: 4000,
+    imagen: DifusorAuto
   },
   {
     id: 2,
-    nombre: "Aromatizador Vainilla",
-    descripcion: "Aromatizador de ambiente con fragancia de vainilla. Perfecto para crear un ambiente acogedor.",
-    precio: 32.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Dulce"
+    nombre: "Difusor de Varillas",
+    descripcion: "Difusor de varillas con fragancia de larga duración. Perfecto para crear un ambiente acogedor y perfumado en tu hogar. Envase de 125ml",
+    precio: 4500,
+    imagen: DifusorVarilla
   },
   {
     id: 3,
-    nombre: "Aromatizador Eucalipto",
-    descripcion: "Purificador de aire con esencia de eucalipto. Ideal para espacios que necesitan frescura.",
-    precio: 37.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Fresca"
+    nombre: "Perfume Textil",
+    descripcion: "Perfume textil para ropa y telas. Deja tus prendas con un aroma fresco y duradero. Ideal para uso diario. Envase de 250ml",
+    precio: 4500,
+    imagen: PerfumeTextil
   },
   {
     id: 4,
-    nombre: "Aromatizador Canela",
-    descripcion: "Difusor con aroma especiado de canela. Crea un ambiente cálido y festivo en tu hogar.",
-    precio: 34.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Especiada"
-  },
-  {
-    id: 5,
-    nombre: "Aromatizador Rosa",
-    descripcion: "Elegante difusor con fragancia de rosa. Añade sofisticación y elegancia a cualquier espacio.",
-    precio: 38.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Floral"
-  },
-  {
-    id: 6,
-    nombre: "Aromatizador Cítricos",
-    descripcion: "Energizante aromatizador con mezcla de cítricos. Ilumina y refresca cualquier ambiente.",
-    precio: 33.99,
-    imagen: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
-    categoria: "Cítrica"
+    nombre: "Wax Melts",
+    descripcion: "Piezas hechas con cera y esencia, aromatizan más que una vela normal. Vienen en paquetes. Tenemos 4 formas disponibles: nube, corazón y dos tipos de estrellas.",
+    precio: 5500,
+    imagen: Waxmelts
   }
 ];
-
