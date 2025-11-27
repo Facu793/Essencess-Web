@@ -70,6 +70,7 @@
   color: #5C4033;
   line-height: 1.4;
   margin-bottom: 0.5rem;
+  white-space: pre-line;
 }
 
 .item-controls {
