@@ -123,7 +123,7 @@ export const velas = [
     id: 11,
     nombre: "Vela Gnomo",
     descripcion: "Vela aromática con diseño de gnomo. Ideal para decorar y crear un ambiente mágico y acogedor.",
-    precio: 26.99,
+    precio: 3000,
     imagen: Gnomo
   },
   
@@ -158,16 +158,16 @@ export const velas = [
   },
   {
     id: 16,
-    nombre: "Vela Ramo de Peonias",
+    nombre: "Ramo de Peonias",
     descripcion: "Vela aromática con diseño de ramo de peonias. Ideal para ocasiones especiales y regalos.",
-    precio: 36.99,
+    precio: 10000,
     imagen: RamoPeonias
   },
   {
     id: 17,
     nombre: "Vela Mini Ramo",
     descripcion: "Pequeña vela aromática con diseño de ramo. Perfecta para decorar y aromatizar espacios pequeños.",
-    precio: 23.99,
+    precio: 3.500,
     imagen: MiniRamo
   },
   {
@@ -195,7 +195,7 @@ export const velas = [
     id: 21,
     nombre: "Vela Peonia con Base de Madera",
     descripcion: "Vela aromática con diseño de peonia y base de madera. Combinación natural y elegante.",
-    precio: 38.99,
+    precio: 4000,
     imagen: PeoniaWoodBase
   },
   {
@@ -243,7 +243,7 @@ export const velas = [
     id: 27,
     nombre: "Vela Árbol de Navidad",
     descripcion: "Vela aromática con diseño de árbol de Navidad. Perfecta para decorar durante las fiestas navideñas.",
-    precio: 30.99,
+    precio: 3500,
     imagen: ArbolNavidad
   },
   {
@@ -278,7 +278,7 @@ export const velas = [
     id: 32,
     nombre: "Vela Familia",
     descripcion: "Vela aromática con diseño familiar. Ideal para crear un ambiente cálido y acogedor en el hogar.",
-    precio: 31.99,
+    precio: 2800,
     imagen: Familia
   },
   {
@@ -292,7 +292,7 @@ export const velas = [
     id: 34,
     nombre: "Vela Laberinto",
     descripcion: "Vela aromática con diseño de laberinto. Diseño único y moderno para decorar tu espacio.",
-    precio: 28.99,
+    precio: 1500,
     imagen: Maze
   },
   {
@@ -306,7 +306,7 @@ export const velas = [
     id: 36,
     nombre: "Vela Pino",
     descripcion: "Vela aromática con diseño de pino. Ideal para la temporada navideña y crear ambiente festivo.",
-    precio: 30.99,
+    precio: 2000,
     imagen: Pino
   },
   {
@@ -329,7 +329,7 @@ export const velas = [
     id: 39,
     nombre: "Vela con Tarjetón",
     descripcion: "Vela aromática con tarjetón personalizable. Ideal para regalos y ocasiones especiales.",
-    precio: 26.99,
+    precio: 2500,
     imagen: VelaTarjeton
   },
   
