@@ -153,7 +153,7 @@ export const velas = [
     id: 15,
     nombre: "Vela Ramo de Margaritas",
     descripcion: "Vela aromática con diseño de ramo de margaritas. Perfecta para crear un ambiente fresco y natural.",
-    precio: 34.99,
+    precio: 10000,
     imagen: RamoMargaritas
   },
   {
@@ -174,20 +174,20 @@ export const velas = [
     id: 18,
     nombre: "Vela Cuenco con Margarita",
     descripcion: "Vela aromática en cuenco con diseño de margarita. Combinación elegante de forma y diseño.",
-    precio: 31.99,
+    precio: 4000,
     imagen: CuencoMargarita
   },
   {
     id: 19,
     nombre: "Vela Cuenco con Mariposa",
     descripcion: "Vela aromática en cuenco con diseño de mariposa. Perfecta para decorar y crear ambiente.",
-    precio: 31.99,
+    precio: 4000,
     imagen: CuencoMariposa
   },
   {
     id: 20,
-    nombre: "Vela Cuenco y Margarita",
-    descripcion: "Vela aromática en cuenco con margarita. Diseño natural y elegante para tu hogar.",
+    nombre: "Vela Cuenco y Mini Margaritas",
+    descripcion: "Vela aromática en cuenco con mini margaritas  . Diseño natural y elegante para tu hogar.",
     precio: 31.99,
     imagen: CuencoYMargarita
   },
@@ -234,7 +234,7 @@ export const velas = [
     id: 26,
     nombre: "Vela Cuenco",
     descripcion: "Vela aromática en cuenco. Diseño clásico y funcional, perfecta para cualquier espacio.",
-    precio: 25.99,
+    precio: 3000,
     imagen: Cuenco
   },
   
@@ -257,14 +257,14 @@ export const velas = [
     id: 29,
     nombre: "Vela Café",
     descripcion: "Vela aromática con diseño de café. Perfecta para amantes del café y crear un ambiente acogedor.",
-    precio: 27.99,
+    precio: 10000,
     imagen: Cafe
   },
   {
     id: 30,
     nombre: "Vela Cerveza",
     descripcion: "Vela aromática con diseño de cerveza. Ideal para espacios de entretenimiento y relajación.",
-    precio: 27.99,
+    precio: 15000,
     imagen: Cerveza
   },
   {
