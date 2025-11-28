@@ -15,77 +15,77 @@ export const piezasYeso = [
     id: 1,
     nombre: "Base Decorativa",
     descripcion: "Base de yeso artesanal perfecta para decorar y sostener objetos. Diseño elegante y minimalista.",
-    precio: 35.99,
+    precio: 3000,
     imagen: Base
   },
   {
     id: 2,
-    nombre: "Cuenco con Tapa",
+    nombre: "Cuenco + Tapa",
     descripcion: "Hermoso cuenco de yeso con tapa. Ideal para almacenar o decorar. Diseño clásico y funcional.",
-    precio: 42.99,
+    precio: 4000,
     imagen: CuencoTapa
   },
   {
     id: 3,
     nombre: "Cuenco Decorativo",
     descripcion: "Cuenco de yeso artesanal con diseño moderno. Perfecto para decoración o uso funcional.",
-    precio: 38.99,
+    precio: 2500,
     imagen: Cuenco2
   },
   {
     id: 4,
     nombre: "Florero de Yeso",
     descripcion: "Elegante florero de yeso para flores secas o artificiales. Añade un toque sofisticado a tu decoración.",
-    precio: 45.99,
+    precio: 4500,
     imagen: Florero
   },
   {
     id: 5,
-    nombre: "Globo de Yeso",
+    nombre: "Globe Yeso",
     descripcion: "Globo decorativo de yeso. Diseño minimalista perfecto para espacios modernos y contemporáneos.",
-    precio: 40.99,
+    precio: 3000,
     imagen: GlobeYeso
   },
   {
     id: 6,
     nombre: "Porta Sahumerio",
     descripcion: "Porta sahumerio de yeso artesanal. Diseño funcional y decorativo para tus rituales de aromaterapia.",
-    precio: 32.99,
+    precio: 3000,
     imagen: PortaShaumerio
   },
   {
     id: 7,
-    nombre: "Bandeja con Cuenco",
+    nombre: "Tray con Cuenco",
     descripcion: "Set de bandeja y cuenco de yeso. Combinación elegante perfecta para decorar cualquier espacio.",
-    precio: 55.99,
+    precio: 5500,
     imagen: TrayCuenco
   },
   {
     id: 8,
-    nombre: "Bandeja con Globo",
+    nombre: "Tray + Globe",
     descripcion: "Bandeja decorativa con globo de yeso. Diseño contemporáneo para espacios modernos.",
-    precio: 58.99,
+    precio: 5000,
     imagen: TrayGlobe
   },
   {
     id: 9,
-    nombre: "Bandeja Básica",
+    nombre: "Tray Basic",
     descripcion: "Bandeja de yeso con diseño minimalista. Perfecta para organizar y decorar espacios pequeños.",
-    precio: 28.99,
+    precio: 3000,
     imagen: TrayBasic
   },
   {
     id: 10,
-    nombre: "Bandeja Nube",
+    nombre: "Tray Cloud",
     descripcion: "Bandeja de yeso con diseño de nube. Original y decorativa, ideal para espacios modernos.",
-    precio: 48.99,
+    precio: 4000,
     imagen: TrayCloud
   },
   {
     id: 11,
-    nombre: "Bandeja Globo",
+    nombre: "Tray Globe",
     descripcion: "Bandeja de yeso con globo decorativo. Elegancia y funcionalidad en un solo producto.",
-    precio: 52.99,
+    precio: 3500,
     imagen: TrayGlobe2
   }
 ];
