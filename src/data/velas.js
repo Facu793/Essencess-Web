@@ -74,7 +74,7 @@ export const velas = [
     id: 5,
     nombre: "Bear & Bouquet",
     descripcion: "Vela aromática con diseño de oso y ramo de flores. Ideal para regalos y decoración.",
-    precio: 35.99,
+    precio: 2000 + "c/u",
     imagen: BearBouquet
   },
   {
@@ -160,7 +160,7 @@ export const velas = [
     id: 17,
     nombre: "Vela Mini Ramo",
     descripcion: "Pequeña vela aromática con diseño de ramo. Perfecta para decorar y aromatizar espacios pequeños.",
-    precio: 3.500,
+    precio: 3500,
     imagen: MiniRamo
   },
   {
