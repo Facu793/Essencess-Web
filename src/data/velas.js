@@ -61,34 +61,27 @@ export const velas = [
     precio: 2000,
     imagen: SmallBuddha
   },
-  {
-    id: 3,
-    nombre: "Vela Buda Pequeño 2",
-    descripcion: "Vela aromática con diseño de Buda pequeño, variante 2. Perfecta para decorar y aromatizar.",
-    precio: 24.99,
-    imagen: SmallBuddha2
-  },
-  
+
   // Velas con Animales
   {
     id: 4,
     nombre: "Bear",
     descripcion: "Adorable vela aromática con diseño de oso. Perfecta para decorar y crear un ambiente acogedor.",
-    precio: 1500,
+    precio: 1500 + "c/u" ,
     imagen: Bear
   },
   {
     id: 5,
     nombre: "Bear & Bouquet",
     descripcion: "Vela aromática con diseño de oso y ramo de flores. Ideal para regalos y decoración.",
-    precio: 35.99,
+    precio: 2000 + "c/u",
     imagen: BearBouquet
   },
   {
     id: 6,
     nombre: "Bear & Bouquet",
     descripcion: "Vela aromática con diseño de oso sosteniendo un ramo. Perfecta para ocasiones especiales.",
-    precio: 2000,
+    precio: 2000 + "c/u",
     imagen: BearBouquet2
   },
   {
@@ -167,7 +160,7 @@ export const velas = [
     id: 17,
     nombre: "Vela Mini Ramo",
     descripcion: "Pequeña vela aromática con diseño de ramo. Perfecta para decorar y aromatizar espacios pequeños.",
-    precio: 3.500,
+    precio: 3500,
     imagen: MiniRamo
   },
   {
@@ -188,7 +181,7 @@ export const velas = [
     id: 20,
     nombre: "Vela Cuenco y Mini Margaritas",
     descripcion: "Vela aromática en cuenco con mini margaritas  . Diseño natural y elegante para tu hogar.",
-    precio: 31.99,
+    precio: 4000,
     imagen: CuencoYMargarita
   },
   {
@@ -285,7 +278,7 @@ export const velas = [
     id: 33,
     nombre: "Vela Galletas de Jengibre",
     descripcion: "Vela aromática con diseño de galletas de jengibre. Perfecta para la temporada navideña.",
-    precio: 29.99,
+    precio: 2500,
     imagen: MasitasJengibre
   },
   {
