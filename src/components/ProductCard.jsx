@@ -52,7 +52,11 @@ function ProductCard({ producto, tipo }) {
           </button>
         </div>
         <div className="product-footer">
-          <span className="product-price">${producto.precio.toFixed(2)}</span>
+          <span className="product-price">
+            {typeof producto.precio === 'number'
+              ? `$${producto.precio.toFixed(2)}`
+              : producto.precio}
+          </span>
           <button className="btn-add-cart" onClick={handleAddToCart}>
             Agregar al carrito
           </button>
