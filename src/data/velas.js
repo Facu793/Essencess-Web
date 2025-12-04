@@ -51,7 +51,7 @@ export const velas = [
     id: 1,
     nombre: "Buddha",
     descripcion: "Vela aromática con diseño de Buda. Perfecta para crear un ambiente de paz y relajación en tu espacio.",
-    precio: 3000,
+    precio: 2999,
     imagen: Buddha
   },
   {
