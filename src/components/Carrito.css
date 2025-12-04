@@ -18,6 +18,13 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
+}
+
+.carrito-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .carrito-title {
@@ -33,9 +40,11 @@
 .carrito-items {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 1rem;
   max-height: calc(100vh - 300px);
   background: #F5F5DC;
+  -webkit-overflow-scrolling: touch;
 }
 
 .carrito-item {
@@ -161,15 +170,52 @@
   border-top: 2px solid #D2B48C;
 }
 
+.carrito-totals {
+  margin-bottom: 1rem;
+}
+
+.carrito-subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #F8F8F8;
+  border-radius: 10px;
+  border: 1px solid #D2B48C;
+  margin-bottom: 0.5rem;
+}
+
+.carrito-discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #E8F5E9;
+  border-radius: 10px;
+  border: 1px solid #4CAF50;
+  margin-bottom: 0.5rem;
+}
+
+.discount-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2E7D32;
+}
+
+.discount-amount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4CAF50;
+}
+
 .carrito-total {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   padding: 1rem;
   background: #F8F8F8;
   border-radius: 10px;
-  border: 1px solid #D2B48C;
+  border: 2px solid #8B4513;
 }
 
 .total-label {
@@ -228,18 +274,91 @@
 
 @media (max-width: 768px) {
   .carrito-container {
-    width: calc(100% - 40px);
-    right: 20px;
-    left: 20px;
-    max-width: 400px;
+    width: calc(100% - 20px);
+    right: 10px;
+    left: 10px;
+    max-width: none;
+    top: 70px;
+    max-height: calc(100vh - 90px);
+    height: auto;
+  }
+
+  .carrito-title {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+  }
+
+  .carrito-items {
+    padding: 0.75rem;
+    max-height: calc(100vh - 400px);
+    min-height: 200px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .carrito-item {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .item-name {
+    font-size: 0.95rem;
+  }
+
+  .item-tipo {
+    font-size: 0.75rem;
+  }
+
+  .item-descripcion {
+    font-size: 0.75rem;
   }
 
   .item-controls {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.75rem;
   }
 
   .item-price {
     align-items: flex-start;
+  }
+
+  .price-unit {
+    font-size: 0.7rem;
+  }
+
+  .price-total {
+    font-size: 0.95rem;
+  }
+
+  .carrito-footer {
+    padding: 1rem;
+  }
+
+  .carrito-subtotal,
+  .carrito-discount,
+  .carrito-total {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .total-label {
+    font-size: 1rem;
+  }
+
+  .total-amount {
+    font-size: 1.3rem;
+  }
+
+  .discount-label {
+    font-size: 0.85rem;
+  }
+
+  .discount-amount {
+    font-size: 1rem;
+  }
+
+  .btn-comprar {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
   }
 }

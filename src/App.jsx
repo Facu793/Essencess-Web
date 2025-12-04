@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { CartProvider } from './context/CartContext'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Inicio from './components/Inicio'
 import Velas from './components/Velas'
 import Aromatizadores from './components/Aromatizadores'
@@ -37,7 +38,10 @@ function App() {
       <div className="App">
         <Header activeTab={activeTab} setActiveTab={setActiveTab} />
         <Carrito />
-        {renderContent()}
+        <div className={`main-content ${activeTab === 'inicio' ? 'with-footer' : ''}`}>
+          {renderContent()}
+        </div>
+        {activeTab === 'inicio' && <Footer />}
       </div>
     </CartProvider>
   )

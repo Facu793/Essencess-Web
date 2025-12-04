@@ -42,6 +42,24 @@ function ProductCard({ producto, tipo }) {
   }
 
   const handleAddToCart = () => {
+    // Si es souvenir, abrir WhatsApp directamente para pedir presupuesto
+    if (tipo === 'souvenir') {
+      const mensaje = `¡Hola! Me interesa solicitar un presupuesto y personalización para:\n\n` +
+        `• ${producto.nombre}\n` +
+        `• Cantidad: ${cantidad}\n` +
+        `• Descripción: ${producto.descripcion}\n\n` +
+        `Me gustaría consultar sobre opciones de personalización, colores y aromas disponibles.\n\n` +
+        `¡Gracias!`
+      
+      const numeroWhatsApp = '543496499924'
+      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`
+      
+      window.open(url, '_blank')
+      setCantidad(1)
+      return
+    }
+    
+    // Para otros productos, agregar al carrito normalmente
     addToCart({ ...producto, tipo }, cantidad)
     setCantidad(1) // Resetear contador después de agregar
   }
@@ -107,7 +125,7 @@ function ProductCard({ producto, tipo }) {
                 : producto.precio}
             </span>
             <button className="btn-add-cart" onClick={handleAddToCart}>
-              Agregar al carrito
+              {tipo === 'souvenir' ? 'Solicitar presupuesto' : 'Agregar al carrito'}
             </button>
           </div>
         </div>

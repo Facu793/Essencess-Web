@@ -2,7 +2,16 @@ import { useCart } from '../context/CartContext'
 import './Carrito.css'
 
 function Carrito() {
-  const { cartItems, updateQuantity, removeFromCart, getTotalPrice, clearCart } = useCart()
+  const { 
+    cartItems, 
+    updateQuantity, 
+    removeFromCart, 
+    getTotalPrice, 
+    getDiscountPercentage,
+    getDiscountAmount,
+    getTotalWithDiscount,
+    clearCart 
+  } = useCart()
 
   const handleComprar = () => {
     if (cartItems.length === 0) return
@@ -10,15 +19,35 @@ function Carrito() {
     let mensaje = '¡Hola! Me interesa realizar la siguiente compra:\n\n'
     
     cartItems.forEach(item => {
-      const tipoTexto = item.tipo === 'vela' ? 'Vela' : 'Aromatizador'
+      let tipoTexto = 'Producto'
+      if (item.tipo === 'vela') tipoTexto = 'Vela'
+      else if (item.tipo === 'aromatizador') tipoTexto = 'Aromatizador'
+      else if (item.tipo === 'pieza-yeso') tipoTexto = 'Pieza de Yeso'
+      else if (item.tipo === 'souvenir') tipoTexto = 'Souvenir'
+      
       mensaje += `• ${tipoTexto}: ${item.nombre}\n`
       mensaje += `  Cantidad: ${item.cantidad}\n`
       mensaje += `  Descripción: ${item.descripcion}\n`
-      mensaje += `  Precio unitario: $${item.precio.toFixed(2)}\n`
-      mensaje += `  Subtotal: $${(item.precio * item.cantidad).toFixed(2)}\n\n`
+      if (typeof item.precio === 'number') {
+        mensaje += `  Precio unitario: $${item.precio.toFixed(2)}\n`
+        mensaje += `  Subtotal: $${(item.precio * item.cantidad).toFixed(2)}\n\n`
+      } else {
+        mensaje += `  ${item.precio}\n\n`
+      }
     })
 
-    mensaje += `💰 Total: $${getTotalPrice().toFixed(2)}\n\n`
+    const subtotal = getTotalPrice()
+    const discountPercent = getDiscountPercentage()
+    const discount = getDiscountAmount()
+    const total = getTotalWithDiscount()
+
+    mensaje += `💰 Subtotal: $${subtotal.toFixed(2)}\n`
+    
+    if (discountPercent > 0) {
+      mensaje += `🎉 Descuento (${discountPercent}%): -$${discount.toFixed(2)}\n`
+    }
+    
+    mensaje += `💰 Total: $${total.toFixed(2)}\n\n`
     mensaje += 'Gracias!'
 
     const numeroWhatsApp = '543496499924' // Número de WhatsApp (código país + número sin espacios)
@@ -80,9 +109,21 @@ function Carrito() {
         </div>
 
         <div className="carrito-footer">
-          <div className="carrito-total">
-            <span className="total-label">Total:</span>
-            <span className="total-amount">${getTotalPrice().toFixed(2)}</span>
+          <div className="carrito-totals">
+            <div className="carrito-subtotal">
+              <span className="total-label">Subtotal:</span>
+              <span className="total-amount">${getTotalPrice().toFixed(2)}</span>
+            </div>
+            {getDiscountPercentage() > 0 && (
+              <div className="carrito-discount">
+                <span className="discount-label">Descuento ({getDiscountPercentage()}%):</span>
+                <span className="discount-amount">-${getDiscountAmount().toFixed(2)}</span>
+              </div>
+            )}
+            <div className="carrito-total">
+              <span className="total-label">Total:</span>
+              <span className="total-amount">${getTotalWithDiscount().toFixed(2)}</span>
+            </div>
           </div>
           
           <button className="btn-comprar" onClick={handleComprar}>

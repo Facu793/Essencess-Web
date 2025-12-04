@@ -59,7 +59,33 @@ export const CartProvider = ({ children }) => {
   }
 
   const getTotalPrice = () => {
-    return cartItems.reduce((total, item) => total + (item.precio * item.cantidad), 0)
+    return cartItems.reduce((total, item) => {
+      // Solo sumar si el precio es un número
+      if (typeof item.precio === 'number') {
+        return total + (item.precio * item.cantidad)
+      }
+      return total
+    }, 0)
+  }
+
+  const getDiscountPercentage = () => {
+    const totalItems = getTotalItems()
+    if (totalItems >= 30) return 30
+    if (totalItems >= 20) return 20
+    if (totalItems >= 10) return 10
+    return 0
+  }
+
+  const getDiscountAmount = () => {
+    const subtotal = getTotalPrice()
+    const discountPercent = getDiscountPercentage()
+    return subtotal * (discountPercent / 100)
+  }
+
+  const getTotalWithDiscount = () => {
+    const subtotal = getTotalPrice()
+    const discount = getDiscountAmount()
+    return subtotal - discount
   }
 
   return (
@@ -72,6 +98,9 @@ export const CartProvider = ({ children }) => {
         clearCart,
         getTotalItems,
         getTotalPrice,
+        getDiscountPercentage,
+        getDiscountAmount,
+        getTotalWithDiscount,
       }}
     >
       {children}

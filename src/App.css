@@ -2,6 +2,15 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.main-content {
+  padding-bottom: 0;
+}
+
+.main-content.with-footer {
+  padding-bottom: 60px; /* Espacio para el footer fijo solo en Inicio */
 }
 
 /* Smooth scrolling */
