@@ -18,7 +18,7 @@ function Inicio() {
         </div>
         <div className="inicio-content">
           <div className="inicio-welcome">
-            <h2 className="inicio-title">Bienvenido a Esscences</h2>
+            <h2 className="inicio-title">Bienvenido</h2>
             <p className="inicio-subtitle">Velas Aromáticas, Difusores y Piezas de Yeso diseñadas para decorar y perfumar tus espacios.</p>
             <button 
               className="btn-conocer-mas"
@@ -39,7 +39,7 @@ function Inicio() {
             >
               ✕
             </button>
-            <h2 className="modal-title">Sobre Escences</h2>
+            <h2 className="modal-title">Sobre Nosotros</h2>
             <div className="modal-description">
               
               <p>

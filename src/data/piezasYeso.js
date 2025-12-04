@@ -20,57 +20,57 @@ export const piezasYeso = [
   },
   {
     id: 2,
-    nombre: "Cuenco + Tapa",
+    nombre: "Cuenco & Tapa",
     descripcion: "Hermoso cuenco de yeso con tapa. Ideal para almacenar o decorar. Diseño clásico y funcional.",
     precio: 3999,
     imagen: CuencoTapa
   },
   {
     id: 3,
-    nombre: "Cuenco Decorativo",
+    nombre: "Cuenco",
     descripcion: "Cuenco de yeso artesanal con diseño moderno. Perfecto para decoración o uso funcional.",
     precio: 2499,
     imagen: Cuenco2
   },
   {
     id: 4,
-    nombre: "Florero de Yeso",
+    nombre: "Florero",
     descripcion: "Elegante florero de yeso para flores secas o artificiales. Añade un toque sofisticado a tu decoración.",
     precio: 4499,
     imagen: Florero
   },
   {
     id: 5,
-    nombre: "Globe Yeso",
-    descripcion: "Globo decorativo de yeso. Diseño minimalista perfecto para espacios modernos y contemporáneos.",
+    nombre: "Globe",
+    descripcion: "Cubo decorativo de yeso. Perfecto para aquellas decorar tu ambiente.",
     precio: 2999,
     imagen: GlobeYeso
   },
   {
     id: 6,
     nombre: "Porta Sahumerio",
-    descripcion: "Porta sahumerio de yeso artesanal. Diseño funcional y decorativo para tus rituales de aromaterapia.",
+    descripcion: "Producto de yeso artesanal. Diseño funcional y decorativo para tus rituales de aromaterapia.",
     precio: 2999,
     imagen: PortaShaumerio
   },
   {
     id: 7,
-    nombre: "Tray con Cuenco",
-    descripcion: "Set de bandeja y cuenco de yeso. Combinación elegante perfecta para decorar cualquier espacio.",
+    nombre: "Tray & Cuenco",
+    descripcion: "Set de bandeja, cuenco y vela. Combinación elegante perfecta para decorar cualquier espacio.",
     precio: 5499,
     imagen: TrayCuenco
   },
   {
     id: 8,
-    nombre: "Tray + Globe",
-    descripcion: "Bandeja decorativa con globo de yeso. Diseño contemporáneo para espacios modernos.",
+    nombre: "Tray & Globe",
+    descripcion: "Set de Bandeja y globe de yeso. Diseño para espacios modernos.",
     precio: 4999,
     imagen: TrayGlobe
   },
   {
     id: 9,
     nombre: "Tray Basic",
-    descripcion: "Bandeja de yeso con diseño minimalista. Perfecta para organizar y decorar espacios pequeños.",
+    descripcion: "Bandeja de yeso con diseño minimalista. Perfecta para organizar y decorar.",
     precio: 2999,
     imagen: TrayBasic
   },
@@ -84,7 +84,7 @@ export const piezasYeso = [
   {
     id: 11,
     nombre: "Tray Globe",
-    descripcion: "Bandeja de yeso con globo decorativo. Elegancia y funcionalidad en un solo producto.",
+    descripcion: "Bandeja de yeso decorativa, elegante y funcional.",
     precio: 3499,
     imagen: TrayGlobe2
   }

@@ -7,21 +7,21 @@ export const aromatizadores = [
   {
     id: 1,
     nombre: "Difusor Auto",
-    descripcion: "Están diseñados estéticamente para el coche, aportan un excelente aroma en el espacio. Envase de 10cc.",
+    descripcion: "Están diseñados estéticamente para el auto, aportan un excelente aroma en el espacio.\nEnvase de 10cc.\n",
     precio: 3999,
     imagen: DifusorAuto
   },
   {
     id: 2,
     nombre: "Difusor de Varillas",
-    descripcion: "Difusor de varillas con fragancia de larga duración. Perfecto para crear un ambiente acogedor y perfumado en tu hogar. Envase de 125ml",
+    descripcion: "Fragancia de larga duración. Perfecto para crear un ambiente perfumado en tu hogar. \nEnvase de 125ml\n",
     precio: 4499,
     imagen: DifusorVarilla
   },
   {
     id: 3,
     nombre: "Perfume Textil",
-    descripcion: "Perfume textil para ropa y telas. Deja tus prendas con un aroma fresco y duradero. Ideal para uso diario. Envase de 250ml",
+    descripcion: "Deja tus prendas con un aroma fresco y duradero. Ideal para uso diario. \nEnvase de 250ml\n",
     precio: 4499,
     imagen: PerfumeTextil
   },
