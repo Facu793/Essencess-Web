@@ -58,7 +58,7 @@ export const velas = [
     id: 2,
     nombre: "Small Buddha",
     descripcion: "Vela aromática con diseño de Buda pequeño. Ideal para espacios pequeños y crear un ambiente sereno.",
-    precio: 2000,
+    precio: 1999,
     imagen: SmallBuddha
   },
 
@@ -67,56 +67,56 @@ export const velas = [
     id: 4,
     nombre: "Bear",
     descripcion: "Adorable vela aromática con diseño de oso. Perfecta para decorar y crear un ambiente acogedor.",
-    precio: 1500 + "c/u" ,
+    precio: 1499,
     imagen: Bear
   },
   {
     id: 5,
     nombre: "Bear & Bouquet",
     descripcion: "Vela aromática con diseño de oso y ramo de flores. Ideal para regalos y decoración.",
-    precio: 2000 + "c/u",
+    precio: 1999,
     imagen: BearBouquet
   },
   {
     id: 6,
     nombre: "Bear & Bouquet",
     descripcion: "Vela aromática con diseño de oso sosteniendo un ramo. Perfecta para ocasiones especiales.",
-    precio: 2000 + "c/u",
+    precio: 1999,
     imagen: BearBouquet2
   },
   {
     id: 7,
     nombre: "Butterfly",
     descripcion: "Elegante vela aromática con diseño de mariposa. Añade un toque delicado y natural a tu espacio.",
-    precio: 1000,
+    precio: 999,
     imagen: Butterfly
   },
   {
     id: 8,
     nombre: "Butterfly",
     descripcion: "Vela aromática con diseño de mariposa, variante 2. Perfecta para decorar espacios femeninos.",
-    precio: 1000,
+    precio: 999,
     imagen: Butterfly2
   },
   {
     id: 9,
     nombre: "Jirafa",
     descripcion: "Divertida vela aromática con diseño de jirafa. Ideal para decorar habitaciones infantiles.",
-    precio: 1500,
+    precio: 1499,
     imagen: Jirafa
   },
   {
     id: 10,
     nombre: "Lion",
     descripcion: "Vela aromática con diseño de león. Perfecta para crear un ambiente fuerte y elegante.",
-    precio: 1500,
+    precio: 1499,
     imagen: Lion
   },
   {
     id: 11,
     nombre: "Vela Gnomo",
     descripcion: "Vela aromática con diseño de gnomo. Ideal para decorar y crear un ambiente mágico y acogedor.",
-    precio: 3000,
+    precio: 2999,
     imagen: Gnomo
   },
   
@@ -125,77 +125,77 @@ export const velas = [
     id: 12,
     nombre: "Vela Margarita",
     descripcion: "Delicada vela aromática con diseño de margarita. Perfecta para espacios frescos y naturales.",
-    precio: 1500,
+    precio: 1499,
     imagen: Margarita
   },
   {
     id: 13,
     nombre: "Peonias",
     descripcion: "Elegante vela aromática con diseño de peonias. Añade sofisticación y elegancia a tu decoración.",
-    precio: 2500,
+    precio: 2499,
     imagen: Peonias
   },
   {
     id: 14,
     nombre: "Mini Peonias",
     descripcion: "Pequeña vela aromática con diseño de peonias. Ideal para espacios pequeños y detalles decorativos.",
-    precio: 1500,
+    precio: 1499,
     imagen: MiniPeonias
   },
   {
     id: 15,
     nombre: "Vela Ramo de Margaritas",
     descripcion: "Vela aromática con diseño de ramo de margaritas. Perfecta para crear un ambiente fresco y natural.",
-    precio: 10000,
+    precio: 9999,
     imagen: RamoMargaritas
   },
   {
     id: 16,
     nombre: "Ramo de Peonias",
     descripcion: "Vela aromática con diseño de ramo de peonias. Ideal para ocasiones especiales y regalos.",
-    precio: 10000,
+    precio: 9999,
     imagen: RamoPeonias
   },
   {
     id: 17,
     nombre: "Vela Mini Ramo",
     descripcion: "Pequeña vela aromática con diseño de ramo. Perfecta para decorar y aromatizar espacios pequeños.",
-    precio: 3500,
+    precio: 3499,
     imagen: MiniRamo
   },
   {
     id: 18,
     nombre: "Vela Cuenco con Margarita",
     descripcion: "Vela aromática en cuenco con diseño de margarita. Combinación elegante de forma y diseño.",
-    precio: 4000,
+    precio: 3999,
     imagen: CuencoMargarita
   },
   {
     id: 19,
     nombre: "Vela Cuenco con Mariposa",
     descripcion: "Vela aromática en cuenco con diseño de mariposa. Perfecta para decorar y crear ambiente.",
-    precio: 4000,
+    precio: 3999,
     imagen: CuencoMariposa
   },
   {
     id: 20,
     nombre: "Vela Cuenco y Mini Margaritas",
     descripcion: "Vela aromática en cuenco con mini margaritas  . Diseño natural y elegante para tu hogar.",
-    precio: 4000,
+    precio: 3999,
     imagen: CuencoYMargarita
   },
   {
     id: 21,
     nombre: "Vela Peonia con Base de Madera",
     descripcion: "Vela aromática con diseño de peonia y base de madera. Combinación natural y elegante.",
-    precio: 4000,
+    precio: 3999,
     imagen: PeoniaWoodBase
   },
   {
     id: 22,
     nombre: "Rose Sphere",
     descripcion: "Vela aromática con diseño de esfera de rosas. Perfecta para crear un ambiente romántico.",
-    precio: 3500,
+    precio: 3499,
     imagen: RoseSphere
   },
   
@@ -204,21 +204,21 @@ export const velas = [
     id: 23,
     nombre: "Globe",
     descripcion: "Vela aromática en forma de globo. Diseño moderno y minimalista para espacios contemporáneos.",
-    precio: 4000,
+    precio: 3999,
     imagen: Globe
   },
   {
     id: 24,
     nombre: "Globe Hearts",
     descripcion: "Vela aromática en forma de globo con diseño de corazones. Ideal para ocasiones románticas.",
-    precio: 4000,
+    precio: 3999,
     imagen: GlobeHearts
   },
   {
     id: 25,
     nombre: "Mini Globe",
     descripcion: "Pequeña vela aromática en forma de globo. Perfecta para decorar y aromatizar espacios pequeños.",
-    precio: 1500,
+    precio: 1499,
     imagen: MiniGlobe
   },
   
@@ -227,7 +227,7 @@ export const velas = [
     id: 26,
     nombre: "Vela Cuenco",
     descripcion: "Vela aromática en cuenco. Diseño clásico y funcional, perfecta para cualquier espacio.",
-    precio: 3000,
+    precio: 2999,
     imagen: Cuenco
   },
   
@@ -236,84 +236,84 @@ export const velas = [
     id: 27,
     nombre: "Vela Árbol de Navidad",
     descripcion: "Vela aromática con diseño de árbol de Navidad. Perfecta para decorar durante las fiestas navideñas.",
-    precio: 3500,
+    precio: 3499,
     imagen: ArbolNavidad
   },
   {
     id: 28,
     nombre: "Arcoíris",
     descripcion: "Colorida vela aromática con diseño de arcoíris. Añade alegría y color a tu espacio.",
-    precio: 1500,
+    precio: 1499,
     imagen: Arcoíris
   },
   {
     id: 29,
     nombre: "Vela Café",
     descripcion: "Vela aromática con diseño de café. Perfecta para amantes del café y crear un ambiente acogedor.",
-    precio: 10000,
+    precio: 9999,
     imagen: Cafe
   },
   {
     id: 30,
     nombre: "Vela Cerveza",
     descripcion: "Vela aromática con diseño de cerveza. Ideal para espacios de entretenimiento y relajación.",
-    precio: 15000,
+    precio: 14999,
     imagen: Cerveza
   },
   {
     id: 31,
     nombre: "Cloud",
     descripcion: "Vela aromática con diseño de nube. Perfecta para crear un ambiente suave y relajante.",
-    precio: 1000,
+    precio: 999,
     imagen: Cloud
   },
   {
     id: 32,
     nombre: "Vela Familia",
     descripcion: "Vela aromática con diseño familiar. Ideal para crear un ambiente cálido y acogedor en el hogar.",
-    precio: 2800,
+    precio: 2799,
     imagen: Familia
   },
   {
     id: 33,
     nombre: "Vela Galletas de Jengibre",
     descripcion: "Vela aromática con diseño de galletas de jengibre. Perfecta para la temporada navideña.",
-    precio: 2500,
+    precio: 2499,
     imagen: MasitasJengibre
   },
   {
     id: 34,
     nombre: "Vela Laberinto",
     descripcion: "Vela aromática con diseño de laberinto. Diseño único y moderno para decorar tu espacio.",
-    precio: 1500,
+    precio: 1499,
     imagen: Maze
   },
   {
     id: 35,
     nombre: "Moon",
     descripcion: "Vela aromática con diseño de luna. Perfecta para crear un ambiente mágico y relajante.",
-    precio: 3000,
+    precio: 2999,
     imagen: Moon
   },
   {
     id: 36,
     nombre: "Vela Pino",
     descripcion: "Vela aromática con diseño de pino. Ideal para la temporada navideña y crear ambiente festivo.",
-    precio: 2000,
+    precio: 1999,
     imagen: Pino
   },
   {
     id: 37,
     nombre: "Roman Column",
     descripcion: "Vela aromática con diseño de columna romana. Añade elegancia clásica a tu decoración.",
-    precio: 1500,
+    precio: 1499,
     imagen: RomanColumn
   },
   {
     id: 38,
     nombre: "Row Hearts",
     descripcion: "Vela aromática con diseño de corazones en fila. Perfecta para ocasiones románticas y especiales.",
-    precio: 1500,
+    precio: 1499,
     imagen: RowHearts
   },
   
@@ -322,7 +322,7 @@ export const velas = [
     id: 39,
     nombre: "Vela con Tarjetón",
     descripcion: "Vela aromática con tarjetón personalizable. Ideal para regalos y ocasiones especiales.",
-    precio: 2500,
+    precio: 2499,
     imagen: VelaTarjeton
   },
   
@@ -331,14 +331,14 @@ export const velas = [
     id: 40,
     nombre: "Velas Noche Basic",
     descripcion: "Set de velas aromáticas básicas para la noche. Perfectas para crear un ambiente íntimo y relajante.\n Set de 6 velas.\n",
-    precio: 3000,
+    precio: 2999,
     imagen: VelasNocheBasic
   },
   {
     id: 41,
     nombre: "Velas Noche Specials",
     descripcion: "Set de velas aromáticas especiales para la noche. Diseños únicos para ocasiones especiales.\n Set de 5 velas surtidas o personalizadas.\n",
-    precio: 4000,
+    precio: 3999,
     imagen: VelasNocheSpecials
   },
   
@@ -347,28 +347,28 @@ export const velas = [
     id: 42,
     nombre: "Velon Basic",
     descripcion: "Velón aromático básico. Duración prolongada, perfecto para aromatizar espacios grandes.",
-    precio: 2500,
+    precio: 2499,
     imagen: VelonBasic
   },
   {
     id: 43,
     nombre: "Velon Classic",
     descripcion: "Velón aromático clásico. Diseño tradicional y elegancia atemporal para tu hogar.",
-    precio: 3500,
+    precio: 3499,
     imagen: VelonClassic
   },
   {
     id: 44,
     nombre: "Velón Specials",
     descripcion: "Velón aromático especial. Diseño único y fragancia de larga duración.",
-    precio: 3000,
+    precio: 2999,
     imagen: VelonSpecials
   },
   {
     id: 45,
     nombre: "Velon Turned",
     descripcion: "Velón aromático con diseño girado. Estilo moderno y contemporáneo para decorar.",
-    precio: 4000,
+    precio: 3999,
     imagen: VelonTurned
   }
 ];
