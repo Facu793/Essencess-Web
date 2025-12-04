@@ -1,56 +1,120 @@
+import { useState } from 'react'
 import { useCart } from '../context/CartContext'
 import './Header.css'
 
 function Header({ activeTab, setActiveTab }) {
   const { getTotalItems } = useCart()
   const totalItems = getTotalItems()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleNavClick = (tab) => {
+    setActiveTab(tab)
+    setIsMenuOpen(false)
+  }
 
   return (
     <header className="header">
       <div className="header-container">
-        <h1 className="logo">Esscences</h1>
-        <nav className="nav">
+        <div className="header-main">
+          <h1 className="logo">Esscences</h1>
+          <div className="header-right">
+            {totalItems > 0 && (
+              <div className="cart-badge">
+                {totalItems}
+              </div>
+            )}
+            <button
+              className={`mobile-menu-button ${isMenuOpen ? 'open' : ''}`}
+              onClick={() => setIsMenuOpen(prev => !prev)}
+              aria-label="Abrir menú de navegación"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        {/* Navegación de escritorio */}
+        <nav className="nav nav-desktop">
           <button 
             className={`nav-tab ${activeTab === 'inicio' ? 'active' : ''}`}
-            onClick={() => setActiveTab('inicio')}
+            onClick={() => handleNavClick('inicio')}
           >
             Inicio
           </button>
           <button 
             className={`nav-tab ${activeTab === 'velas' ? 'active' : ''}`}
-            onClick={() => setActiveTab('velas')}
+            onClick={() => handleNavClick('velas')}
           >
             Velas
           </button>
           <button 
             className={`nav-tab ${activeTab === 'aromatizadores' ? 'active' : ''}`}
-            onClick={() => setActiveTab('aromatizadores')}
+            onClick={() => handleNavClick('aromatizadores')}
           >
             Aromatizadores
           </button>
           <button 
             className={`nav-tab ${activeTab === 'piezas-yeso' ? 'active' : ''}`}
-            onClick={() => setActiveTab('piezas-yeso')}
+            onClick={() => handleNavClick('piezas-yeso')}
           >
             Piezas de Yeso
           </button>
           <button 
             className={`nav-tab ${activeTab === 'souvenirs' ? 'active' : ''}`}
-            onClick={() => setActiveTab('souvenirs')}
+            onClick={() => handleNavClick('souvenirs')}
           >
             Souvenirs
           </button>
           <button 
             className={`nav-tab ${activeTab === 'contacto' ? 'active' : ''}`}
-            onClick={() => setActiveTab('contacto')}
+            onClick={() => handleNavClick('contacto')}
           >
             Contacto
           </button>
         </nav>
-        {totalItems > 0 && (
-          <div className="cart-badge">
-            {totalItems}
-          </div>
+
+        {/* Navegación móvil desplegable */}
+        {isMenuOpen && (
+          <nav className="nav-mobile">
+            <button 
+              className={`nav-tab-mobile ${activeTab === 'inicio' ? 'active' : ''}`}
+              onClick={() => handleNavClick('inicio')}
+            >
+              Inicio
+            </button>
+            <button 
+              className={`nav-tab-mobile ${activeTab === 'velas' ? 'active' : ''}`}
+              onClick={() => handleNavClick('velas')}
+            >
+              Velas
+            </button>
+            <button 
+              className={`nav-tab-mobile ${activeTab === 'aromatizadores' ? 'active' : ''}`}
+              onClick={() => handleNavClick('aromatizadores')}
+            >
+              Aromatizadores
+            </button>
+            <button 
+              className={`nav-tab-mobile ${activeTab === 'piezas-yeso' ? 'active' : ''}`}
+              onClick={() => handleNavClick('piezas-yeso')}
+            >
+              Piezas de Yeso
+            </button>
+            <button 
+              className={`nav-tab-mobile ${activeTab === 'souvenirs' ? 'active' : ''}`}
+              onClick={() => handleNavClick('souvenirs')}
+            >
+              Souvenirs
+            </button>
+            <button 
+              className={`nav-tab-mobile ${activeTab === 'contacto' ? 'active' : ''}`}
+              onClick={() => handleNavClick('contacto')}
+            >
+              Contacto
+            </button>
+          </nav>
         )}
       </div>
     </header>
