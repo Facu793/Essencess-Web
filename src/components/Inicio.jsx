@@ -41,12 +41,9 @@ function Inicio() {
             </button>
             <h2 className="modal-title">Sobre Escences</h2>
             <div className="modal-description">
+              
               <p>
-                En <strong>Escences</strong>, nos dedicamos a crear productos aromáticos de la más alta calidad 
-                para transformar tu espacio en un ambiente único y acogedor.
-              </p>
-              <p>
-                En Essences nos dedicamos a crear productos aromáticos, de decoración y para obsequiar.
+                En <strong>Escences</strong> nos dedicamos a crear productos aromáticos, de decoración y para obsequiar.
                 Transforma tu espacio en un ambiente único y acogedor con nuestros productos y empeza a regalar sensaciones! 
                 Cada producto es elaborado cuidadosamente para brindarte lo mejor.
                 
