@@ -13,10 +13,15 @@ function Carrito() {
     clearCart 
   } = useCart()
 
+  // Función para formatear números con punto como separador de miles
+  const formatPrice = (price) => {
+    return Math.round(price).toLocaleString('es-AR')
+  }
+
   const handleComprar = () => {
     if (cartItems.length === 0) return
 
-    let mensaje = '¡Hola! Me interesa realizar la siguiente compra:\n\n'
+    let mensaje = '¡Hola! Me interesa realizar la siguiente compra:\n'
     
     cartItems.forEach(item => {
       let tipoTexto = 'Producto'
@@ -25,14 +30,16 @@ function Carrito() {
       else if (item.tipo === 'pieza-yeso') tipoTexto = 'Pieza de Yeso'
       else if (item.tipo === 'souvenir') tipoTexto = 'Souvenir'
       
-      mensaje += `• ${tipoTexto}: ${item.nombre}\n`
-      mensaje += `  Cantidad: ${item.cantidad}\n`
-      mensaje += `  Descripción: ${item.descripcion}\n`
       if (typeof item.precio === 'number') {
-        mensaje += `  Precio unitario: $${item.precio.toFixed(2)}\n`
-        mensaje += `  Subtotal: $${(item.precio * item.cantidad).toFixed(2)}\n\n`
+        const subtotalItem = item.precio * item.cantidad
+        mensaje += `- ${tipoTexto}: ${item.nombre}\n`
+        mensaje += `- Cantidad: ${item.cantidad}\n\n`
+        mensaje += `Precio unitario: $${formatPrice(item.precio)}\n`
+        mensaje += `Subtotal: $${formatPrice(subtotalItem)}\n`
       } else {
-        mensaje += `  ${item.precio}\n\n`
+        mensaje += `- ${tipoTexto}: ${item.nombre}\n`
+        mensaje += `- Cantidad: ${item.cantidad}\n`
+        mensaje += `${item.precio}\n\n`
       }
     })
 
@@ -41,14 +48,13 @@ function Carrito() {
     const discount = getDiscountAmount()
     const total = getTotalWithDiscount()
 
-    mensaje += `💰 Subtotal: $${subtotal.toFixed(2)}\n`
+
     
     if (discountPercent > 0) {
-      mensaje += `🎉 Descuento (${discountPercent}%): -$${discount.toFixed(2)}\n`
+      mensaje += `Descuento (${discountPercent}%): -$${formatPrice(discount)}\n`
     }
     
-    mensaje += `💰 Total: $${total.toFixed(2)}\n\n`
-    mensaje += 'Gracias!'
+    mensaje += `Total: $${formatPrice(total)}`
 
     const numeroWhatsApp = '543496499924' // Número de WhatsApp (código país + número sin espacios)
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`
