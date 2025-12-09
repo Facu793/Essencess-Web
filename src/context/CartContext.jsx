@@ -68,18 +68,30 @@ export const CartProvider = ({ children }) => {
     }, 0)
   }
 
-  const getDiscountPercentage = () => {
-    const totalItems = getTotalItems()
-    if (totalItems >= 30) return 30
-    if (totalItems >= 20) return 20
-    if (totalItems >= 10) return 10
+  const getItemDiscountPercent = (cantidad) => {
+    if (cantidad >= 30) return 30
+    if (cantidad >= 20) return 20
+    if (cantidad >= 10) return 10
     return 0
   }
 
+  const getDiscountPercentage = () => {
+    // Devuelve el mayor porcentaje aplicado en cualquier ítem para mostrar en el resumen
+    return cartItems.reduce((max, item) => {
+      const pct = getItemDiscountPercent(item.cantidad)
+      return Math.max(max, pct)
+    }, 0)
+  }
+
   const getDiscountAmount = () => {
-    const subtotal = getTotalPrice()
-    const discountPercent = getDiscountPercentage()
-    return subtotal * (discountPercent / 100)
+    // Descuento por ítem: solo cuenta la cantidad de ese producto
+    return cartItems.reduce((acc, item) => {
+      if (typeof item.precio !== 'number') return acc
+      const pct = getItemDiscountPercent(item.cantidad)
+      if (pct === 0) return acc
+      const subtotalItem = item.precio * item.cantidad
+      return acc + subtotalItem * (pct / 100)
+    }, 0)
   }
 
   const getTotalWithDiscount = () => {
@@ -101,6 +113,7 @@ export const CartProvider = ({ children }) => {
         getDiscountPercentage,
         getDiscountAmount,
         getTotalWithDiscount,
+        getItemDiscountPercent,
       }}
     >
       {children}

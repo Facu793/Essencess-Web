@@ -10,6 +10,7 @@ function Carrito({ isOpen = true, onClose = () => {} }) {
     getDiscountPercentage,
     getDiscountAmount,
     getTotalWithDiscount,
+    getItemDiscountPercent,
     clearCart 
   } = useCart()
 
@@ -23,7 +24,9 @@ function Carrito({ isOpen = true, onClose = () => {} }) {
 
     let mensaje = '¡Hola! Me interesa realizar la siguiente compra:\n'
     
-    cartItems.forEach(item => {
+    const discountDetails = []
+
+    cartItems.forEach((item, idx) => {
       let tipoTexto = 'Producto'
       if (item.tipo === 'vela') tipoTexto = 'Vela'
       else if (item.tipo === 'aromatizador') tipoTexto = 'Aromatizador'
@@ -36,10 +39,17 @@ function Carrito({ isOpen = true, onClose = () => {} }) {
         mensaje += `- Cantidad: ${item.cantidad}\n\n`
         mensaje += `Precio unitario: $${formatPrice(item.precio)}\n`
         mensaje += `Subtotal: $${formatPrice(subtotalItem)}\n`
+        const pct = getItemDiscountPercent(item.cantidad)
+        if (pct > 0) {
+          discountDetails.push(`• ${item.nombre}: ${pct}% (${item.cantidad} unidades)`)
+        }
       } else {
         mensaje += `- ${tipoTexto}: ${item.nombre}\n`
         mensaje += `- Cantidad: ${item.cantidad}\n`
         mensaje += `${item.precio}\n\n`
+      }
+      if (idx < cartItems.length - 1) {
+        mensaje += '------------------\n'
       }
     })
 
@@ -55,6 +65,10 @@ function Carrito({ isOpen = true, onClose = () => {} }) {
     }
     
     mensaje += `Total: $${formatPrice(total)}`
+
+    if (discountDetails.length > 0) {
+      mensaje += `\n\nDescuentos aplicados:\n${discountDetails.join('\n')}`
+    }
 
     const numeroWhatsApp = '543496499924' // Número de WhatsApp (código país + número sin espacios)
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`
