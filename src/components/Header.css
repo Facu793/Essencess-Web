@@ -53,6 +53,10 @@
   font-size: 0.95rem;
 }
 
+.cart-button-mobile {
+  display: none;
+}
+
 .cart-button:hover,
 .cart-button.open {
   background: linear-gradient(135deg, #A56631 0%, #B7743B 100%);
@@ -247,6 +251,12 @@
 
   .cart-button-desktop {
     display: none;
+  }
+
+  .cart-button-mobile {
+    display: inline-flex;
+    padding: 0.35rem 0.65rem;
+    gap: 0.3rem;
   }
 
   .cart-count {
