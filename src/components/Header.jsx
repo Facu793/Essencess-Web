@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useCart } from '../context/CartContext'
 import './Header.css'
 
-function Header({ activeTab, setActiveTab }) {
+function Header({ activeTab, setActiveTab, isCartOpen, onCartToggle }) {
   const { getTotalItems } = useCart()
   const totalItems = getTotalItems()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -59,11 +59,16 @@ function Header({ activeTab, setActiveTab }) {
           </nav>
 
           <div className="header-right">
-            {totalItems > 0 && (
-              <div className="cart-badge">
-                {totalItems}
-              </div>
-            )}
+            <button 
+              className={`cart-button ${isCartOpen ? 'open' : ''}`}
+              onClick={onCartToggle}
+              aria-label={isCartOpen ? 'Cerrar carrito' : 'Abrir carrito'}
+            >
+              <span className="cart-icon">🛒</span>
+              {totalItems > 0 && (
+                <span className="cart-count">{totalItems}</span>
+              )}
+            </button>
             <button
               className={`mobile-menu-button ${isMenuOpen ? 'open' : ''}`}
               onClick={() => setIsMenuOpen(prev => !prev)}

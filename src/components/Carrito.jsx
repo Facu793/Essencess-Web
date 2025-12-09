@@ -1,7 +1,7 @@
 import { useCart } from '../context/CartContext'
 import './Carrito.css'
 
-function Carrito() {
+function Carrito({ isOpen = true, onClose = () => {} }) {
   const { 
     cartItems, 
     updateQuantity, 
@@ -63,14 +63,23 @@ function Carrito() {
     clearCart()
   }
 
-  if (cartItems.length === 0) {
+  if (!isOpen || cartItems.length === 0) {
     return null
   }
 
   return (
     <div className="carrito-container">
       <div className="carrito-content">
-        <h3 className="carrito-title">Carrito de Compras</h3>
+        <div className="carrito-header">
+          <h3 className="carrito-title">Carrito de Compras</h3>
+          <button 
+            className="carrito-close"
+            onClick={onClose}
+            aria-label="Cerrar carrito"
+          >
+            ✕
+          </button>
+        </div>
         
         <div className="carrito-items">
           {cartItems.map((item, index) => (

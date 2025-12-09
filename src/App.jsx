@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { CartProvider } from './context/CartContext'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -13,6 +13,13 @@ import './App.css'
 
 function App() {
   const [activeTab, setActiveTab] = useState('inicio')
+  const prefersOpenCart = useMemo(() => {
+    if (typeof window === 'undefined') return true
+    return window.innerWidth > 768
+  }, [])
+  const [isCartOpen, setIsCartOpen] = useState(prefersOpenCart)
+
+  const toggleCart = () => setIsCartOpen(prev => !prev)
 
   const renderContent = () => {
     switch(activeTab) {
@@ -36,8 +43,16 @@ function App() {
   return (
     <CartProvider>
       <div className="App">
-        <Header activeTab={activeTab} setActiveTab={setActiveTab} />
-        <Carrito />
+        <Header 
+          activeTab={activeTab} 
+          setActiveTab={setActiveTab} 
+          isCartOpen={isCartOpen}
+          onCartToggle={toggleCart}
+        />
+        <Carrito 
+          isOpen={isCartOpen}
+          onClose={toggleCart}
+        />
         <div className={`main-content ${activeTab === 'inicio' ? 'with-footer' : ''}`}>
           {renderContent()}
         </div>
