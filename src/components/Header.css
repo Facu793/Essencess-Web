@@ -38,23 +38,38 @@
   gap: 0.35rem;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  background: rgba(0, 0, 0, 0.1);
-  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  color: #FDF9F2;
   cursor: pointer;
   font-weight: 700;
   transition: all 0.2s ease;
   position: relative;
 }
 
+.cart-button-desktop {
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.95rem;
+}
+
 .cart-button:hover,
 .cart-button.open {
-  background: rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, #A56631 0%, #B7743B 100%);
+  border-color: rgba(255, 255, 255, 0.55);
 }
 
 .cart-icon {
-  font-size: 1rem;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
   line-height: 1;
+}
+
+.cart-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .cart-count {
@@ -230,9 +245,8 @@
     font-size: 1.6rem;
   }
 
-  .cart-button {
-    padding: 0.35rem 0.65rem;
-    gap: 0.3rem;
+  .cart-button-desktop {
+    display: none;
   }
 
   .cart-count {

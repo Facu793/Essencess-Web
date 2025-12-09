@@ -56,19 +56,32 @@ function Header({ activeTab, setActiveTab, isCartOpen, onCartToggle }) {
             >
               Contacto
             </button>
-          </nav>
-
-          <div className="header-right">
             <button 
-              className={`cart-button ${isCartOpen ? 'open' : ''}`}
+              className={`cart-button cart-button-desktop ${isCartOpen ? 'open' : ''}`}
               onClick={onCartToggle}
               aria-label={isCartOpen ? 'Cerrar carrito' : 'Abrir carrito'}
             >
-              <span className="cart-icon">🛒</span>
+              <span className="cart-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path 
+                    d="M3 4h2l1.2 9h11.6l1.1-7H6.1" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="1.8" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                  />
+                  <circle cx="9" cy="19" r="1.3" fill="currentColor" />
+                  <circle cx="17" cy="19" r="1.3" fill="currentColor" />
+                </svg>
+              </span>
               {totalItems > 0 && (
                 <span className="cart-count">{totalItems}</span>
               )}
             </button>
+          </nav>
+
+          <div className="header-right">
             <button
               className={`mobile-menu-button ${isMenuOpen ? 'open' : ''}`}
               onClick={() => setIsMenuOpen(prev => !prev)}
