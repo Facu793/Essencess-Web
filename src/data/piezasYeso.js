@@ -57,7 +57,7 @@ export const piezasYeso = [
     id: 7,
     nombre: "Tray & Cuenco",
     descripcion: "Set de bandeja, cuenco y vela. Combinación elegante perfecta para decorar cualquier espacio.",
-    precio: 5499,
+    precio: 6499,
     imagen: TrayCuenco
   },
   {

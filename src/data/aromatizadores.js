@@ -8,7 +8,7 @@ export const aromatizadores = [
     id: 1,
     nombre: "Difusor Auto",
     descripcion: "Están diseñados estéticamente para el auto, aportan un excelente aroma en el espacio. Agregar descripcion a difusor: Realizamos refil, tráenos tu envase y lo llenamos. Ayudemos a disminuir los residuos♻️💚\nEnvase de 10cc.\n",
-    precio: 3999,
+    precio: 4499,
     imagen: DifusorAuto
   },
   {

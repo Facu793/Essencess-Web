@@ -153,21 +153,21 @@ export const velas = [
     id: 18,
     nombre: "Cuenco & Margarita",
     descripcion: "Cuenco de yeso más refil y margarita. Perfecta para decorar",
-    precio: 3999,
+    precio: 4499,
     imagen: CuencoMargarita
   },
   {
     id: 19,
     nombre: "Cuenco & Mariposa",
     descripcion: "Cuenco de yeso más refil y mariposa. Perfecta para decorar.",
-    precio: 3999,
+    precio: 4499,
     imagen: CuencoMariposa
   },
   {
     id: 20,
     nombre: "Cuenco & Mini Margaritas",
     descripcion: "Cuenco de yeso más refil y mini margaritas. Perfecta para decorar.",
-    precio: 3999,
+    precio: 4499,
     imagen: CuencoYMargarita
   },
   {
@@ -213,7 +213,7 @@ export const velas = [
     id: 26,
     nombre: "Cuenco & Refil",
     descripcion: "Vela aromática en cuenco. Diseño clásico y funcional, perfecta para cualquier espacio.",
-    precio: 2999,
+    precio: 3999,
     imagen: Cuenco
   },
   
