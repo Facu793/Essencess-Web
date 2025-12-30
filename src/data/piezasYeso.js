@@ -15,21 +15,21 @@ export const piezasYeso = [
     id: 1,
     nombre: "Base Decorativa",
     descripcion: "Base de yeso artesanal perfecta para decorar y sostener objetos. Diseño elegante y minimalista.",
-    precio: 2999,
+    precio: 3499,
     imagen: Base
   },
   {
     id: 2,
     nombre: "Cuenco & Tapa",
     descripcion: "Hermoso cuenco de yeso con tapa. Ideal para almacenar o decorar. Diseño clásico y funcional.",
-    precio: 3999,
+    precio: 4499,
     imagen: CuencoTapa
   },
   {
     id: 3,
     nombre: "Cuenco",
     descripcion: "Cuenco de yeso artesanal con diseño moderno. Perfecto para decoración o uso funcional.",
-    precio: 2499,
+    precio: 2999,
     imagen: Cuenco2
   },
   {
@@ -64,28 +64,28 @@ export const piezasYeso = [
     id: 8,
     nombre: "Tray & Globe",
     descripcion: "Set de Bandeja y globe de yeso. Diseño para espacios modernos.",
-    precio: 4999,
+    precio: 5499,
     imagen: TrayGlobe
   },
   {
     id: 9,
     nombre: "Tray Basic",
     descripcion: "Bandeja de yeso con diseño minimalista. Perfecta para organizar y decorar.",
-    precio: 2999,
+    precio: 3999,
     imagen: TrayBasic
   },
   {
     id: 10,
     nombre: "Tray Cloud",
     descripcion: "Bandeja de yeso con diseño de nube. Original y decorativa, ideal para espacios modernos.",
-    precio: 3999,
+    precio: 4499,
     imagen: TrayCloud
   },
   {
     id: 11,
     nombre: "Tray Globe",
     descripcion: "Bandeja de yeso decorativa, elegante y funcional.",
-    precio: 3499,
+    precio: 3999,
     imagen: TrayGlobe2
   }
 ];

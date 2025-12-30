@@ -354,7 +354,7 @@ export const velas = [
     id: 45,
     nombre: "Velón Turned",
     descripcion: "Velón aromático con diseño girado. Estilo moderno.",
-    precio: 3999,
+    precio: 4499,
     imagen: VelonTurned
   }
 ];
