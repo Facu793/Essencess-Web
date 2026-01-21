@@ -44,7 +44,7 @@ import VelonBasic from '../image/Velas/VelonBasic .jpeg'
 import VelonClassic from '../image/Velas/VelonClassic .jpeg'
 import VelonSpecials from '../image/Velas/VelonSpecials.jpeg'
 import VelonTurned from '../image/Velas/VelonTurned.jpeg'
-
+import VelaU from '../image/Velas/VelaU.jpeg'
 export const velas = [
   // Velas con Buda
   {
@@ -356,5 +356,12 @@ export const velas = [
     descripcion: "Velón aromático con diseño girado. Estilo moderno.",
     precio: 4499,
     imagen: VelonTurned
+  },
+  {
+    id: 46,
+    nombre: "U",
+    descripcion: "Vela simple y estética para decorar un ambiente.",
+    precio: 3000,
+    imagen: VelaU
   }
 ];
