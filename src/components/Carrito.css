@@ -6,7 +6,7 @@
   max-height: calc(100vh - 100px);
   background: #F8F8F8;
   border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.2);
+  box-shadow: 0 8px 25px rgba(65, 37, 71, 0.2);
   z-index: 1000;
   overflow: hidden;
   display: flex;
@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  background: #412547;
   color: white;
 }
 
@@ -88,13 +88,13 @@
 .item-name {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #8B4513;
+  color: #412547;
   margin-bottom: 0.25rem;
 }
 
 .item-tipo {
   font-size: 0.85rem;
-  color: #B06500;
+  color: #412547;
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
@@ -102,7 +102,7 @@
 
 .item-descripcion {
   font-size: 0.85rem;
-  color: #5C4033;
+  color: #412547;
   line-height: 1.4;
   margin-bottom: 0.5rem;
   white-space: pre-line;
@@ -125,7 +125,7 @@
 }
 
 .quantity-btn {
-  background: linear-gradient(135deg, #B06500 0%, #8B4513 100%);
+  background: #412547;
   color: white;
   border: none;
   width: 28px;
@@ -148,7 +148,7 @@
   font-weight: 700;
   min-width: 25px;
   text-align: center;
-  color: #8B4513;
+  color: #412547;
 }
 
 .item-price {
@@ -160,17 +160,17 @@
 
 .price-unit {
   font-size: 0.8rem;
-  color: #A0522D;
+  color: #412547;
 }
 
 .price-total {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #8B4513;
+  color: #412547;
 }
 
 .remove-btn {
-  background: #FF8C00;
+  background: #412547;
   color: white;
   border: none;
   width: 30px;
@@ -186,7 +186,7 @@
 }
 
 .remove-btn:hover {
-  background: #FF6B00;
+  background: #2b1438;
   transform: scale(1.1);
 }
 
@@ -241,19 +241,19 @@
   padding: 1rem;
   background: #F8F8F8;
   border-radius: 10px;
-  border: 2px solid #8B4513;
+  border: 2px solid #412547;
 }
 
 .total-label {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #8B4513;
+  color: #412547;
 }
 
 .total-amount {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #A0522D;
+  color: #412547;
 }
 
 .btn-comprar {
@@ -290,12 +290,12 @@
 }
 
 .carrito-items::-webkit-scrollbar-thumb {
-  background: #8B4513;
+  background: #412547;
   border-radius: 10px;
 }
 
 .carrito-items::-webkit-scrollbar-thumb:hover {
-  background: #A0522D;
+  background: #2b1438;
 }
 
 @media (max-width: 768px) {

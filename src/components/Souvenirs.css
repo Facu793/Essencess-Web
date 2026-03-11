@@ -14,12 +14,12 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #8B4513;
+  color: #412547;
 }
 
 .section-subtitle {
   text-align: center;
-  color: #A0522D;
+  color: #412547;
   font-size: 1.1rem;
   margin-bottom: 3rem;
 }
@@ -34,9 +34,9 @@
 
 .filter-btn {
   padding: 0.7rem 1.5rem;
-  border: 2px solid #8B4513;
+  border: 2px solid #412547;
   background: #F8F8F8;
-  color: #8B4513;
+  color: #412547;
   border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
@@ -44,16 +44,16 @@
 }
 
 .filter-btn:hover {
-  background: #8B4513;
+  background: #412547;
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
+  box-shadow: 0 4px 8px rgba(65, 37, 71, 0.3);
 }
 
 .filter-btn.active {
-  background: linear-gradient(135deg, #B06500 0%, #8B4513 100%);
+  background: #412547;
   color: white;
-  border-color: transparent;
+  border-color: #412547;
 }
 
 .products-grid {

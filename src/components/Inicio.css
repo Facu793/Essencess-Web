@@ -48,7 +48,7 @@
   background: rgba(245, 245, 220, 0.6);
   padding: 2.25rem 2rem;
   border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(139, 69, 19, 0.3);
+  box-shadow: 0 10px 40px rgba(65, 37, 71, 0.3);
   max-width: 600px;
   backdrop-filter: blur(10px);
   animation: fadeInUp 0.8s ease-out;
@@ -60,20 +60,20 @@
 .inicio-title {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #8B4513;
+  color: #412547;
   margin-bottom: 0.6rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .inicio-subtitle {
   font-size: 1.1rem;
-  color: #A0522D;
+  color: #412547;
   margin-bottom: 1.2rem;
   font-style: italic;
 }
 
 .btn-conocer-mas {
-  background: linear-gradient(135deg, #B06500 0%, #8B4513 100%);
+  background: #412547;
   color: white;
   border: none;
   padding: 1rem 2.5rem;
@@ -82,12 +82,12 @@
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
+  box-shadow: 0 4px 15px rgba(65, 37, 71, 0.4);
 }
 
 .btn-conocer-mas:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.5);
+  box-shadow: 0 6px 20px rgba(65, 37, 71, 0.5);
 }
 
 .btn-conocer-mas:active {
@@ -128,7 +128,7 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: #8B4513;
+  background: #412547;
   color: white;
   border: none;
   width: 35px;
@@ -144,21 +144,21 @@
 }
 
 .modal-close:hover {
-  background: #A0522D;
+  background: #2b1438;
   transform: rotate(90deg);
 }
 
 .modal-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #8B4513;
+  color: #412547;
   margin-bottom: 2rem;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .modal-description {
-  color: #5C4033;
+  color: #412547;
   line-height: 1.8;
   font-size: 1.1rem;
 }
@@ -172,7 +172,7 @@
 }
 
 .modal-description strong {
-  color: #8B4513;
+  color: #412547;
   font-weight: 700;
 }
 
@@ -219,12 +219,12 @@
 }
 
 .modal-content::-webkit-scrollbar-thumb {
-  background: #8B4513;
+  background: #412547;
   border-radius: 10px;
 }
 
 .modal-content::-webkit-scrollbar-thumb:hover {
-  background: #A0522D;
+  background: #2b1438;
 }
 
 @media (max-width: 768px) {
