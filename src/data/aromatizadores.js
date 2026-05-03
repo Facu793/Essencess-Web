@@ -15,7 +15,7 @@ export const aromatizadores = [
     id: 2,
     nombre: "Difusor de Varillas",
     descripcion: "Fragancia de larga duración. Perfecto para crear un ambiente perfumado en tu hogar. Agregar descripcion a difusor: Realizamos refil, tráenos tu envase y lo llenamos. Ayudemos a disminuir los residuos♻️💚\nEnvase de 125ml\n",
-    precio: 5499,
+    precio: 6499,
     imagen: DifusorVarilla
   },
   {
